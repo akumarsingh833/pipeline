@@ -1,0 +1,25 @@
+name: "first pipe"
+
+on: workflow_dispatch
+
+jobs:
+  terraform-jobs:
+    runs-on: self-hosted
+    steps:
+      -name: Checkout
+       uses: actions.checkout@6.1.0
+
+      - name: Azure Login
+          - name: Azure Login
+          uses: Azure/login@v2.3.1
+          with:
+            client-id: fe8b7002-3424-4bb4-acd5-89af346c4628
+            
+            tenant-id: 97648c0e-1dab-4e6d-aa72-28b090130779
+            
+            subscription-id: 96e773ad-0cf2-4b89-a10e-199e5a8e51f9
+
+        
+               
+              
+          
