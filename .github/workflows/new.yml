@@ -3,6 +3,10 @@ name: "first pipe"
 on:
   workflow_dispatch:
 
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
   terraform-jobs:
     runs-on: self-hosted
