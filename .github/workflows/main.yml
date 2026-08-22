@@ -1,0 +1,26 @@
+name: "first pipe"
+
+on:
+  workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  terraform-jobs:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Azure Login
+        uses: azure/login@v2
+        with:
+          client-id: fe8b7002-3424-4bb4-acd5-89af346c4628
+          tenant-id: 97648c0e-1dab-4e6d-aa72-28b090130779
+          subscription-id: 96e773ad-0cf2-4b89-a10e-199e5a8e51f9
+
+      - name: Verify Azure Login
+        run: az account show
