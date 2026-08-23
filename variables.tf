@@ -5,6 +5,6 @@ variable "rg_names" {
 }
 
 variable "rg_location" {
-    default = "west us"
+  default = "west us"
 
 }
