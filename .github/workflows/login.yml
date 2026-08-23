@@ -5,7 +5,6 @@ run-name: babuan
 on:
   push:
     branches:
-      - main
       - "feature/**"
 
   pull_request:
