@@ -21,7 +21,7 @@ provider "azurerm" {
 
 resource "azurerm_resource_group" "rg" {
   name     = "sohan"
-  location = "east us"
+  location = "west us"
 }
 
 resource "azurerm_storage_account" "stg" {
