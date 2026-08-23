@@ -20,7 +20,7 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "rg" {
-  name     = "kulcha"
+  name     = "sohan"
   location = "Central India"
 }
 
