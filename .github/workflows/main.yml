@@ -9,6 +9,7 @@ permissions:
 
 jobs:
   terraform-jobs:
+     environment: dev
     runs-on: self-hosted
 
     steps:
